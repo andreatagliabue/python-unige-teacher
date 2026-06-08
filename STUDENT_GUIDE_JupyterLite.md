@@ -25,7 +25,10 @@ Welcome! In this course you will write and run Python directly **in your web bro
 1. Open your browser.
 2. Go to the course link:
 
-   > **Course link:** `<<< THE INSTRUCTOR WILL GIVE YOU THE EXACT LINK HERE >>>`
+   > **Course link:** **https://andreatagliabue.github.io/python-unige/**
+   >
+   > (To jump straight into the first lesson, you can also use:
+   > `https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=00_intro_theoretical_lecture.ipynb`)
 
 3. Wait a few seconds. You will see the **JupyterLab interface**:
    - on the **left**, a *file browser* showing the course notebooks and a `data` folder (these are already there for you);
