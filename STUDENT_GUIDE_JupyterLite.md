@@ -4,6 +4,24 @@ Welcome! In this course you will write and run Python directly **in your web bro
 
 ---
 
+## Course links
+
+**Course home:** **https://andreatagliabue.github.io/python-unige/**
+
+This single link opens everything. You can also jump straight to a specific lesson:
+
+| Lesson | Link |
+|---|---|
+| 1 — Introduction | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=01_introduction.ipynb |
+| 2 — Python basics | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=02_python_basics.ipynb |
+| 3 — Data I/O and tables | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=03_data_io_and_tables.ipynb |
+| 4 — Plotting and analysis | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=04_plotting_and_analysis.ipynb |
+| 5 — Fitting, statistics, automation | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=05_fitting_stats_automation.ipynb |
+
+> **Tip:** bookmark the course home so you can always find it. Open it in a **normal** browser window (not Private/Incognito — see Section 5).
+
+---
+
 ## 1. What is JupyterLite (and what you need)
 
 - **JupyterLite** is a version of the Jupyter Notebook environment that runs entirely inside your browser. Python itself runs on your computer, *inside the browser tab* — not on a remote server.
@@ -23,12 +41,9 @@ Welcome! In this course you will write and run Python directly **in your web bro
 ## 2. Opening the course
 
 1. Open your browser.
-2. Go to the course link:
+2. Go to the **course home** (or pick a lesson from the **Course links** table at the top of this guide):
 
-   > **Course link:** **https://andreatagliabue.github.io/python-unige/**
-   >
-   > (To jump straight into the first lesson, you can also use:
-   > `https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=01_introduction.ipynb`)
+   > **https://andreatagliabue.github.io/python-unige/**
 
 3. Wait a few seconds. You will see the **JupyterLab interface**:
    - on the **left**, a *file browser* showing the course notebooks and a `data` folder (these are already there for you);
