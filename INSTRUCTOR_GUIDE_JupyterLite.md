@@ -50,8 +50,8 @@ Create a folder (e.g. `course_site/`) and inside it a `content/` folder. Everyth
 ```
 course_site/
 └── content/
-    ├── 00_intro_theoretical_lecture.ipynb
-    ├── 01_hands_on.ipynb
+    ├── 01_introduction.ipynb
+    ├── 02_python_basics.ipynb
     ├── ...
     └── data/
         ├── tensile_raw.csv
