@@ -26,3 +26,7 @@ venv/
 
 # Notebook-generated figures (recreated on run; not source)
 **/figures/
+
+# Lesson 5 runtime artifacts (the notebook builds runs/ and the summary on the fly)
+**/runs/
+**/automated_tensile_summary.csv
