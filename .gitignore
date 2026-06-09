@@ -23,3 +23,6 @@ venv/
 
 # OS
 .DS_Store
+
+# Notebook-generated figures (recreated on run; not source)
+**/figures/
