@@ -2,6 +2,9 @@
 
 This guide explains how to package your course (notebooks + data) into your **own JupyterLite site** and share it with students as a **single link**. Students just click the link: the notebooks and data are already there — no upload, no account, no installation on their side.
 
+> **This course is already published at:** **https://andreatagliabue.github.io/python-unige/**
+> (built and deployed automatically from the `course_site/content/` folder on every push — see Section 6A). The five lesson notebooks are `01_introduction`, `02_python_basics`, `03_data_io_and_tables`, `04_plotting_and_analysis`, `05_fitting_stats_automation`.
+
 ---
 
 ## 1. The big picture
