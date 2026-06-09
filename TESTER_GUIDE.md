@@ -7,28 +7,26 @@
 > fixed and pushed, the live site changes. JupyterLite, however, **saves a personal copy
 > of each notebook inside your browser** the first time you open it — and it will keep
 > showing you *that* copy, not the updated one online. So while we iterate, we have to
-> make sure we are looking at the freshly-deployed version, not a stale local copy.
+> make sure we are looking at the latest version, not a stale local copy.
 >
 > For students this never matters: they open it once and just work. The caching behaviour
 > is actually a *feature* for them (their work is saved automatically in the browser).
 
 ---
 
-## Why a normal refresh is not enough
+## Course links
 
-When you open a notebook in JupyterLite, two separate things get stored in your browser:
+**Course home:** https://andreatagliabue.github.io/python-unige/
 
-1. **The app and its files** — cached by the browser (HTTP cache + a *service worker*).
-2. **Your working copy of the notebook** — copied into a private in-browser storage area
-   (IndexedDB, the JupyterLite "drive").
+Direct notebook links (`?path=` opens that notebook straight away):
 
-A normal reload — even a *hard* reload (`Ctrl/Cmd + Shift + R`) — only refreshes part of
-(1). It does **not** clear (2). So if you have already opened, say, `04_plotting_and_analysis.ipynb`,
-JupyterLite keeps serving you the copy saved in your browser, and you will **not** see the
-new version even after we push a fix.
-
-**Bottom line:** to be certain you are on the latest version, you must either use a
-**fresh private/incognito window** or **clear the site data**.
+| Lesson | Link |
+|---|---|
+| 1 — Introduction | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=01_introduction.ipynb |
+| 2 — Python basics | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=02_python_basics.ipynb |
+| 3 — Data I/O and tables | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=03_data_io_and_tables.ipynb |
+| 4 — Plotting and analysis | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=04_plotting_and_analysis.ipynb |
+| 5 — Fitting, statistics, automation | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=05_fitting_stats_automation.ipynb |
 
 ---
 
@@ -95,40 +93,27 @@ fresh browser profile) that you never use for the course. First open there = cle
 
 ---
 
-## One more thing: give the deploy a moment
-
-After a push, GitHub Pages takes **~1–2 minutes** to rebuild and publish, and its CDN may
-serve the old files for a short while. So the safe sequence is:
-
-1. Push the change.
-2. Wait ~1–2 minutes.
-3. Open in a **fresh incognito window** (Method 1).
-
-If you still see the old version, it is almost always (a) the deploy hasn't finished, or
-(b) you are looking at a saved copy — redo Method 1 or Method 2.
-
----
-
-## Course links
-
-**Course home:** https://andreatagliabue.github.io/python-unige/
-
-Direct notebook links (`?path=` opens that notebook straight away):
-
-| Lesson | Link |
-|---|---|
-| 1 — Introduction | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=01_introduction.ipynb |
-| 2 — Python basics | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=02_python_basics.ipynb |
-| 3 — Data I/O and tables | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=03_data_io_and_tables.ipynb |
-| 4 — Plotting and analysis | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=04_plotting_and_analysis.ipynb |
-| 5 — Fitting, statistics, automation | https://andreatagliabue.github.io/python-unige/notebooks/index.html?path=05_fitting_stats_automation.ipynb |
-
----
-
 ## Quick checklist for every test
 
-- [ ] Pushed change, waited ~1–2 min for the deploy.
 - [ ] Closed **all** previous incognito/private windows.
 - [ ] Opened a **fresh** incognito window.
 - [ ] Pasted the direct lesson link.
 - [ ] (If anything looks stale) cleared site data — Method 2 — and reloaded.
+
+---
+
+## Appendix — Why a normal refresh is not enough
+
+When you open a notebook in JupyterLite, two separate things get stored in your browser:
+
+1. **The app and its files** — cached by the browser (HTTP cache + a *service worker*).
+2. **Your working copy of the notebook** — copied into a private in-browser storage area
+   (IndexedDB, the JupyterLite "drive").
+
+A normal reload — even a *hard* reload (`Ctrl/Cmd + Shift + R`) — only refreshes part of
+(1). It does **not** clear (2). So if you have already opened, say, `04_plotting_and_analysis.ipynb`,
+JupyterLite keeps serving you the copy saved in your browser, and you will **not** see the
+new version even after we push a fix.
+
+**Bottom line:** to be certain you are on the latest version, you must either use a
+**fresh private/incognito window** (Method 1) or **clear the site data** (Method 2).
