@@ -10,7 +10,7 @@ Welcome! In this course you will write and run Python directly **in your web bro
 
 That single link opens **everything** — all the lessons and the data are already there. When it loads, you will see a file browser on the left: just **double-click the lesson** you want (e.g. `01_introduction.ipynb`) and it opens in the center.
 
-> **Tip:** bookmark this link so you can always find it. Open it in a **normal** browser window (not Private/Incognito — see Section 5).
+> **Tip:** bookmark this link. Always open it in a **Private / Incognito** window (see Section 1 for why).
 
 ---
 
@@ -26,7 +26,7 @@ That single link opens **everything** — all the lessons and the data are alrea
 - A laptop (Windows, macOS, or Linux — it does not matter).
 - A recent version of **Google Chrome, Microsoft Edge, or Firefox**. Avoid Internet Explorer and very old browsers.
 - An **internet connection**, especially the first time you open it (the browser downloads Python and the scientific libraries the first time — this can take 30–60 seconds).
-- Do **not** use the browser in *Private / Incognito* mode for the course: your work would be deleted every time you close the window (see Section 5).
+- Always open the course in a **Private / Incognito** window (Chrome: `Ctrl+Shift+N` / `Cmd+Shift+N`; Firefox: `Ctrl+Shift+P`). This ensures you always start from a clean, fresh environment — no leftover state from a previous session. The tradeoff is that your edits are not saved when you close the window; download your notebook before closing if you want to keep it (see Section 5).
 
 ---
 
@@ -79,18 +79,16 @@ If something behaves strangely, reset and start clean:
 
 ## 5. Saving your work (please read — this is important!)
 
-Your work lives **inside your browser's storage on this specific computer**. This has two consequences:
+Because you are working in **Private / Incognito** mode, **your edits exist only for the duration of that window**. When you close the incognito window (or all incognito windows), the browser discards everything — your changes are gone.
 
-- ✅ If you simply close and reopen the tab on the **same browser and same computer**, your work is still there.
-- ❌ Your work is **NOT** synced to the cloud and is **NOT** available on another computer.
-- ❌ If you clear your browser history / cached data, or use *Private / Incognito* mode, your work **will be lost**.
-
-**Therefore, at the end of every lesson, download a copy of your notebook to your computer:**
+**Therefore, if you want to keep your work, download it before closing:**
 
 1. Open the menu **`File` → `Download`** (or right-click the file in the left browser → **Download**).
 2. Save the `.ipynb` file somewhere safe on your computer.
 
-If you ever want to continue your downloaded notebook later, you can drag it back into the file browser to upload it.
+If you want to continue from a downloaded notebook in a later session, drag it into the file browser to upload it.
+
+> ℹ️ This is intentional: starting each lesson in a fresh incognito window means you always get the original, unmodified course materials with no leftover state from previous sessions.
 
 ---
 
@@ -102,7 +100,7 @@ If you ever want to continue your downloaded notebook later, you can drag it bac
 | **First cell takes very long / seems stuck** | The first run downloads Python and the libraries. Wait up to a minute and make sure you have internet. |
 | **A cell shows `[*]` and never finishes** | It may be waiting or stuck. Use **Kernel → Interrupt Kernel**, then run again. |
 | **Everything looks broken (errors everywhere)** | This is almost always the *running state*, not your file. Do **Kernel → Restart Kernel and Run All Cells** — reloading the page also resets the running state. This fixes the large majority of issues. |
-| **I edited the notebook and want the ORIGINAL back** | Your saved edits live in the browser, so **a reload keeps them** (it does not undo your changes). To restore the original course version, clear this site's data in your browser (browser settings → *clear site data / browsing data* for this site), then reopen the link. Files you never edited are always the originals. |
+| **I edited the notebook and want the ORIGINAL back** | Close **all** incognito/private windows (not just the tab — the whole incognito session), then open a new incognito window and reopen the course link. This resets the browser storage completely and loads the original files. |
 | **`FileNotFoundError` when reading a data file** | Make sure you are running the notebook from the course link (where the `data` folder is provided). If it persists, reload the page and tell the instructor. |
 
 ---
