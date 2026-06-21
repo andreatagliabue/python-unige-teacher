@@ -1,0 +1,11 @@
+- [User: Andrea Tagliabue](user-andrea-tagliabue.md) — Politecnico di Torino, preparing the Python course
+- [Python course plan](python-course-plan.md) — beginner Python course for Materials Science PhD (JupyterLite, English); ALL 5 lessons done & published; L5 split into 05a_curve_fitting / 05b_statistics / 05c_automation + 05_overview.md
+- [Lesson 5 draft fixes](lesson5-draft-fixes.md) — traps fixed in Andrea's L5 draft (Path.exists, dataset coherence, pre-peak Voce fit); useful review checklist for any new draft notebook
+- [Lesson 1 speaker notes](lesson1-speaker-notes.md) — cell-by-cell cue cards (.docx+.pdf); pushed to teacher repo only (NOT to student origin); how to regenerate (python-docx, soffice→pdf, pkill bracket trick)
+- [JupyterLite deployment](jupyterlite-deployment.md) — TWO deployments: student (python-unige, L1–L4 + 05a/b/c + overview, all live) + teacher (python-unige-teacher, same + speaker notes); auto-deploy on push; ONLY notebooks in course_site/content/ go live
+- [JupyterLite gotchas](jupyterlite-gotchas.md) — Pyodide pitfalls: Path.exists() raises, ipywidgets fragile (use matplotlib to_jshtml animations), robust load_csv, self-contained cells
+- [Tensile dataset coherence](tensile-dataset-coherence.md) — shared tensile example across lessons; canonical sample→treatment map (S01/S02 annealed, S03 quenched, S04 aged, S05 as_received)
+- [Student guide conventions](student-guide-conventions.md) — incognito recommended; reset = close all incognito windows; all lessons now live simultaneously (update guide if regenerating)
+- [Feedback: always share link](feedback-always-share-link.md) — end every reply with the live course link; direct links for L1–L4 and L5a/b/c updated
+- [Feedback: course pedagogy](feedback-course-pedagogy.md) — opinionated review (missing vs too-advanced); concepts before use; add new basics in their own lesson; intro lecture is a "what Python can do" demo
+- [Feedback: decide and ship](feedback-decide-and-ship.md) — when he says "fai tu", decide pragmatically and proceed; "done" = committed + published + live link, not just committed
